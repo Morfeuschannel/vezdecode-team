@@ -1,13 +1,12 @@
 $grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1500px,
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
 );
 
-$font: "FontName", sans-serif;
+$font: "FontName", -apple-system, system-ui, sans-serif;
 
 $color-main: #434963;
-$color-blue: #178cf9;
