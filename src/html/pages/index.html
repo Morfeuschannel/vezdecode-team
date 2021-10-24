@@ -1,10 +1,36 @@
 <%=_.template(require('../templates/header.html'))({
-    title: "sitename",
+    title: "Без булдырабыз — команда вездекода",
     menu: {}
 }) %>
 
 <main class="main">
-    <%=_.template(require('../templates/home/banner.html'))() %>
+    <%=_.template(require('../templates/home/about.html'))() %>
+    <div class="team container">
+        <%=_.template(require('../templates/home/team.html'))({
+            name: "Иван Степин",
+            text: "Бывший дизайнер. 1,5 года занимается веб-разработкой, пишет музыку, ищет тяночку и готовит борщи.",
+            age: "22 года",
+            photo: "img/team/ivan.jpg",
+        }) %>
+        <%=_.template(require('../templates/home/team.html'))({
+            name: "Анастасия Лаврова",
+            text: "Настоящий дизайнер. Создаёт интерфейсы, однажды нарисовала кнопку в виде чак-чака, любит спать.",
+            age: "18 лет",
+            photo: "img/team/anastasia.png",
+        }) %>
+        <%=_.template(require('../templates/home/team.html'))({
+            name: "Екатерина Козлова",
+            text: "Frontend разработчик. Написала свой первый сайт в блокноте. Теперь может вызвать дьявола через Webstorm.",
+            age: "29 лет",
+            photo: "img/team/katya.jpg",
+        }) %>
+        <%=_.template(require('../templates/home/team.html'))({
+            name: "Нияз Леушкин",
+            text: "Прогает на си, java и c#. Любит собак и котиков. Заставил микроволновку думать, что она метеостанция.",
+            age: "18 лет",
+            photo: "img/team/niyaz.jpeg",
+        }) %>
+    </div>
 </main>
 
 <%=_.template(require('../templates/footer.html'))() %>

@@ -1,8 +1,12 @@
 {
-  "name": "projectname",
+  "name": "vezdecode-team",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morfeuschannel/vezdecode-team.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --open --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js",
